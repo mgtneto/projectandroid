@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(../fonte/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor1: #c5ebd6;
+    --cor2: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrao);
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6);
+}
+
+header {
+
+    height: 100%;
+    background-image: linear-gradient(to bottom, #3ddc84, #063d1e);
+    text-align: center;
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main h1 {
+    font-family: var(--fonte-android);
+    color: #063d1e;
+    font-weight: normal;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, #c5ebd6, #ffffff);
+    color: #063d1e;
+    text-indent: 10px;
+    font-weight: normal;
+}
+
+main p {
+    font-family: var(--fonte-padrao);
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.05em;
+    line-height: 1.5em;
+}
+
+ main {
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: justify;
+ }
+
+main img {
+   width: 100%;
+}
+
+main > iframe {
+    margin: auto;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+ }
+
+ main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+main a::after {
+    content: ' 🔗';
+    text-decoration: none;
+    font-weight: normal;
+    color: #ffffff
+
+}
+
+div.video {
+    background-color: #063d1e;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 57%;    
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
+}
+
+aside h3 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    background-color: #2fa866;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    text-align: justify;
+}
+
+aside a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside a:hover {
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+
+aside a::after {
+    content: ' 🔗';
+    text-decoration: none;
+    font-weight: normal;
+    color: #ffffff
+
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+}
